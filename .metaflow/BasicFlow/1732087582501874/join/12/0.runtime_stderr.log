@@ -1,0 +1,4 @@
+[MFLOG|0|2024-11-20T07:26:25.077074Z|runtime|07fcee28-b6f4-48c8-9e5a-efa67290095b]    Flow failed:
+[MFLOG|0|2024-11-20T07:26:25.077367Z|runtime|360cce68-b1d8-4e58-a663-694891241620]    Flows can't be serialized. Maybe you tried to assign self or one of the inputs to an attribute? Instead of serializing the whole flow, you should choose specific attributes, e.g. input.some_var, to be stored.
+[MFLOG|0|2024-11-20T07:26:25.195459Z|runtime|c2ce1f6e-e3bd-41ad-bf57-97fea6a23e5b]
+[MFLOG|0|2024-11-20T07:26:25.201022Z|runtime|5eb24f19-8db0-48e7-a476-37907ba78ff2]Task failed.

@@ -1,0 +1,5 @@
+[MFLOG|0|2024-11-20T07:01:48.191879Z|runtime|4bafe473-0538-4a93-a567-10dbd5192fc5]<flow BasicFlow step users> failed:
+[MFLOG|0|2024-11-20T07:01:48.197168Z|runtime|0823c6c0-ec71-44a3-b37c-8bb6309783aa]    Invalid self.next() transition detected on line 24:
+[MFLOG|0|2024-11-20T07:01:48.197315Z|runtime|691ce331-322d-4b79-98a6-78ada46d806c]    Step users has an invalid self.next() transition. The argument to 'foreach' must be a string.
+[MFLOG|0|2024-11-20T07:01:48.263668Z|runtime|45f44dd3-7cc4-47ee-96e6-27e2c3da596e]
+[MFLOG|0|2024-11-20T07:01:48.264196Z|runtime|8cc0ccf8-1f1f-4c1a-8d8c-8c374f2dc5fe]Task failed.

@@ -1,0 +1,40 @@
+[MFLOG|0|2024-11-20T08:03:48.023709Z|runtime|92ca4cee-0825-4ca7-897a-9875c0d68879]<flow BasicFlow step user_join> failed:
+[MFLOG|0|2024-11-20T08:03:48.028399Z|runtime|ace1d9ed-f7a5-4564-a75a-36018b01047e]    Internal error
+[MFLOG|0|2024-11-20T08:03:48.032485Z|runtime|0af6aeea-d3e7-47ee-91d0-81d52aa7fa8e]Traceback (most recent call last):
+[MFLOG|0|2024-11-20T08:03:48.032753Z|runtime|5aaa1bf9-b9fd-4990-b450-ae605a7a3a47]  File "/home/hassanmahmood/01-PROFESSIONAL-CAREER/01-ALLIED-BANK-WORKSPACE/MetaFlow-Learning-and-Tutorials/venv/lib/python3.12/site-packages/metaflow/cli.py", line 1166, in main
+[MFLOG|0|2024-11-20T08:03:48.032951Z|runtime|384c8981-7b22-4508-98f6-9e8e753e36e7]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2024-11-20T08:03:48.033119Z|runtime|2ecd97f1-18e6-4a86-acc6-75d55f665770]  File "/home/hassanmahmood/01-PROFESSIONAL-CAREER/01-ALLIED-BANK-WORKSPACE/MetaFlow-Learning-and-Tutorials/venv/lib/python3.12/site-packages/metaflow/tracing/__init__.py", line 27, in wrapper_func
+[MFLOG|0|2024-11-20T08:03:48.033283Z|runtime|4b015b11-08c6-4f3f-a4af-686e3737d1d7]    return func(args, kwargs)
+[MFLOG|0|2024-11-20T08:03:48.132817Z|runtime|bb9d4722-03f4-4ad9-b006-e2b85bbbd1cc]           ^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-20T08:03:48.133051Z|runtime|11b4a73d-bba8-42a7-9085-5aa29f93f48a]  File "/home/hassanmahmood/01-PROFESSIONAL-CAREER/01-ALLIED-BANK-WORKSPACE/MetaFlow-Learning-and-Tutorials/venv/lib/python3.12/site-packages/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2024-11-20T08:03:48.133172Z|runtime|69aa3ce6-66fc-47cb-ab3f-a32c55bc6255]    return self.main(args, kwargs)
+[MFLOG|0|2024-11-20T08:03:48.133278Z|runtime|fbe33b00-1779-4538-88fa-a55308cfa282]           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-20T08:03:48.133372Z|runtime|4c371638-8bb8-4139-a944-9a9cd5501ab1]  File "/home/hassanmahmood/01-PROFESSIONAL-CAREER/01-ALLIED-BANK-WORKSPACE/MetaFlow-Learning-and-Tutorials/venv/lib/python3.12/site-packages/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2024-11-20T08:03:48.133473Z|runtime|7cc467e6-fd2d-4e44-a971-3a073076068f]    rv = self.invoke(ctx)
+[MFLOG|0|2024-11-20T08:03:48.133588Z|runtime|fa0a2a5b-d6dc-4ed1-8177-0df8d345b2b0]         ^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-20T08:03:48.133680Z|runtime|0cceafc9-6092-4411-880d-56b7514da443]  File "/home/hassanmahmood/01-PROFESSIONAL-CAREER/01-ALLIED-BANK-WORKSPACE/MetaFlow-Learning-and-Tutorials/venv/lib/python3.12/site-packages/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2024-11-20T08:03:48.133774Z|runtime|39d7432f-e704-4396-a518-529262c1d2fe]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2024-11-20T08:03:48.133863Z|runtime|2392080d-ff84-4ce0-b6d1-2f8961d540bd]                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-20T08:03:48.133951Z|runtime|b331b5b3-d105-4ee8-9646-993da107a14a]  File "/home/hassanmahmood/01-PROFESSIONAL-CAREER/01-ALLIED-BANK-WORKSPACE/MetaFlow-Learning-and-Tutorials/venv/lib/python3.12/site-packages/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2024-11-20T08:03:48.134041Z|runtime|97f1c5f0-717a-4003-8b80-0b0de8b494fa]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2024-11-20T08:03:48.134131Z|runtime|d4229f33-2325-4092-a780-1a900a483e33]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-20T08:03:48.134222Z|runtime|cd547771-73d1-479e-bd56-872ca10d0d0f]  File "/home/hassanmahmood/01-PROFESSIONAL-CAREER/01-ALLIED-BANK-WORKSPACE/MetaFlow-Learning-and-Tutorials/venv/lib/python3.12/site-packages/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2024-11-20T08:03:48.134315Z|runtime|c9f4d0b5-5721-457a-b273-d595dd7bf07d]    return callback(args, kwargs)
+[MFLOG|0|2024-11-20T08:03:48.134405Z|runtime|8018dccf-cd7d-4e4f-83b2-4e6fecd53973]           ^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-20T08:03:48.134496Z|runtime|368eac87-cdf9-42f0-96ac-58e62ba39b02]  File "/home/hassanmahmood/01-PROFESSIONAL-CAREER/01-ALLIED-BANK-WORKSPACE/MetaFlow-Learning-and-Tutorials/venv/lib/python3.12/site-packages/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2024-11-20T08:03:48.134600Z|runtime|05785ca0-9404-48c5-8e74-a30cdaea7cee]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2024-11-20T08:03:48.134691Z|runtime|e5533af7-8baf-4383-82b7-40669dd43e9c]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-20T08:03:48.134780Z|runtime|949f8448-bbde-48ef-861c-8e15abe12ed0]  File "/home/hassanmahmood/01-PROFESSIONAL-CAREER/01-ALLIED-BANK-WORKSPACE/MetaFlow-Learning-and-Tutorials/venv/lib/python3.12/site-packages/metaflow/cli.py", line 469, in step
+[MFLOG|0|2024-11-20T08:03:48.134873Z|runtime|5974d95c-56d1-4219-be32-f91e070f7479]    task.run_step(
+[MFLOG|0|2024-11-20T08:03:48.134962Z|runtime|7229bcd8-a2f0-460e-bac0-d2029bbfa69d]  File "/home/hassanmahmood/01-PROFESSIONAL-CAREER/01-ALLIED-BANK-WORKSPACE/MetaFlow-Learning-and-Tutorials/venv/lib/python3.12/site-packages/metaflow/task.py", line 651, in run_step
+[MFLOG|0|2024-11-20T08:03:48.135054Z|runtime|63f15678-1ca1-4f54-84d4-812c4d5dd89e]    self._exec_step_function(step_func, input_obj)
+[MFLOG|0|2024-11-20T08:03:48.135143Z|runtime|f229ebe0-bd43-4302-9e34-a7e53ad51dac]  File "/home/hassanmahmood/01-PROFESSIONAL-CAREER/01-ALLIED-BANK-WORKSPACE/MetaFlow-Learning-and-Tutorials/venv/lib/python3.12/site-packages/metaflow/task.py", line 64, in _exec_step_function
+[MFLOG|0|2024-11-20T08:03:48.135235Z|runtime|23acd0b9-2ca9-4f0f-9f62-b5e53c64b3ef]    step_function(input_obj)
+[MFLOG|0|2024-11-20T08:03:48.135327Z|runtime|33e958a2-5f3e-437f-b360-4267498f467a]  File "/home/hassanmahmood/01-PROFESSIONAL-CAREER/01-ALLIED-BANK-WORKSPACE/MetaFlow-Learning-and-Tutorials/01-Basics/flow.py", line 62, in user_join
+[MFLOG|0|2024-11-20T08:03:48.135417Z|runtime|dfc4cdf9-4890-4030-b6be-bf2d5ce78d1a]    print(self.users_list)
+[MFLOG|0|2024-11-20T08:03:48.135514Z|runtime|fb5e72f1-0d35-426f-8659-2890817df567]          ^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-20T08:03:48.135607Z|runtime|5c646764-0cf6-4cd8-9e34-2cdb8a663fe7]  File "/home/hassanmahmood/01-PROFESSIONAL-CAREER/01-ALLIED-BANK-WORKSPACE/MetaFlow-Learning-and-Tutorials/venv/lib/python3.12/site-packages/metaflow/flowspec.py", line 254, in __getattr__
+[MFLOG|0|2024-11-20T08:03:48.135704Z|runtime|6feebd83-0da8-4b6a-8bc5-3b3ff7bf4ed8]    raise AttributeError("Flow %s has no attribute '%s'" % (self.name, name))
+[MFLOG|0|2024-11-20T08:03:48.135797Z|runtime|1513ffc2-06bc-44b5-9709-9569260c1169]AttributeError: Flow BasicFlow has no attribute 'users_list'
+[MFLOG|0|2024-11-20T08:03:48.135889Z|runtime|1979540f-b422-43f4-9390-a3fb4944aa89]
+[MFLOG|0|2024-11-20T08:03:48.136239Z|runtime|1ee3679a-bbd6-406d-99e6-fd3ecaf1e9f0]Task failed.

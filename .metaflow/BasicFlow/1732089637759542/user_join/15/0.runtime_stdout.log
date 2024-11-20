@@ -1,0 +1,2 @@
+[MFLOG|0|2024-11-20T08:00:41.035726Z|runtime|7c24a286-6238-44e2-b926-389edaea260e][('Hassan', 6), ('Ali', 9), ('Haris', 18)]
+[MFLOG|0|2024-11-20T08:00:41.102381Z|runtime|e4451000-6a1e-43c1-8c8a-ed4cf097a698]<metaflow.datastore.inputs.Inputs object at 0x798df7e79b80>
