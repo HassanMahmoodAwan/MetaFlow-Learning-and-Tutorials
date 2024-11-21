@@ -4,6 +4,7 @@ class ForeachFlow(FlowSpec):
 
     @step
     def start(self):
+        self.names = "Hassan"
         self.titles = ['Stranger Things',
                        'House of Cards',
                        'Narcos']
@@ -11,12 +12,16 @@ class ForeachFlow(FlowSpec):
 
     @step
     def a(self):
-        self.title = '%s processed' % self.input
+        self.title = self.input + "input is titles"
+        print(self.names)
+        self.names = self.names
         self.next(self.join)
 
     @step
     def join(self, inputs):
         self.results = [input.title for input in inputs]
+        for inp in inputs:
+            print(inp.names)
         self.next(self.end)
 
     @step

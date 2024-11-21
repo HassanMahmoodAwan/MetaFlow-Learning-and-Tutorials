@@ -1,9 +1,5 @@
 from metaflow import FlowSpec, step, Parameter, JSONType, card
 
-# def checkingFlow():
-#     from metaflow import Metaflow
-#     print(Metaflow().flows)
-# checkingFlow()
 
 class BasicFlow(FlowSpec):
     
