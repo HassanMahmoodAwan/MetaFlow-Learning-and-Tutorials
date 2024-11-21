@@ -1,0 +1,10 @@
+[MFLOG|0|2024-11-20T10:17:00.300854Z|runtime|c59c98b2-3962-413e-b2e7-56df4ce1f1df][Flow('BasicFlow'), Flow('ForeachFlow')]
+[MFLOG|0|2024-11-20T10:17:00.349977Z|runtime|8a1f1164-49c6-41d8-b0b0-8330d9ec940b]Workflow Started! 
+[MFLOG|0|2024-11-20T10:17:00.350200Z|runtime|03f386f4-9ddc-43ed-9143-04b42281b2fb]Users are :  [('Hassan', 6), ('Ali', 9), ('Haris', 18)]
+[MFLOG|0|2024-11-20T10:17:01.231828Z|runtime|ce2bef0e-ecee-46ac-b44d-21e75cb814c9]Card render failed with error : 
+[MFLOG|0|2024-11-20T10:17:01.300538Z|runtime|5b955062-7ee1-400c-ba21-222883e7aadb]
+[MFLOG|0|2024-11-20T10:17:01.300749Z|runtime|f0e69b55-f14c-4629-913d-551105de58c6] []
+[MFLOG|0|2024-11-20T10:17:01.300867Z|runtime|e8ba9286-0974-4479-8f73-5e58deb0c7e2]    Object not found:
+[MFLOG|0|2024-11-20T10:17:01.300972Z|runtime|3df5c1cc-0d9f-44ec-814a-c327b74aa9a6]    Task('BasicFlow/1732097819933420/start/1') does not exist
+[MFLOG|0|2024-11-20T10:17:01.301073Z|runtime|ec6e05ba-7bee-4697-be53-fb5663d88243]
+[MFLOG|0|2024-11-20T10:17:01.301175Z|runtime|611d26fd-ff94-4db8-8f3d-82c3ac887cba]

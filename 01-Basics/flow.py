@@ -1,14 +1,15 @@
-from metaflow import FlowSpec, step, Parameter, JSONType
+from metaflow import FlowSpec, step, Parameter, JSONType, card
 
-def checkingFlow():
-    from metaflow import Metaflow
-    print(Metaflow().flows)
-checkingFlow()
+# def checkingFlow():
+#     from metaflow import Metaflow
+#     print(Metaflow().flows)
+# checkingFlow()
 
 class BasicFlow(FlowSpec):
     
     all_users = Parameter("users", help="interest_rate for loan", required=True, type=JSONType, default=[("Hassan", 6), ("Ali", 9), ("Haris", 18)])
     
+    @card
     @step
     def start(self):
         """
@@ -18,11 +19,13 @@ class BasicFlow(FlowSpec):
         print("Users are : ", self.all_users)
         self.next(self.users)
     
+    @card
     @step
     def users(self):
         self.users_list = self.all_users
         self.next(self.create_artifacts, foreach="users_list")    
     
+    @card
     @step
     def create_artifacts(self):
         """
@@ -39,16 +42,19 @@ class BasicFlow(FlowSpec):
         
         self.next(self.compute_payable, self.actual_monthly_installment)
     
+    @card
     @step
     def compute_payable(self):
         self.payable_Amount = float(self.principal * self.interestRate * self.period) / 100
         self.next(self.join)
     
+    @card
     @step
     def actual_monthly_installment(self):
         self.installment = self.principal / (self.period * 12)
         self.next(self.join)
     
+    @card
     @step
     def join(self, inputs):
         """
@@ -61,11 +67,13 @@ class BasicFlow(FlowSpec):
         print(self.installment)
         self.next(self.user_join)
      
+    @card
     @step
     def user_join(self, inputs):
         print(self.all_users)
         self.next(self.end)      
     
+    @card
     @step
     def end(self):
         """
