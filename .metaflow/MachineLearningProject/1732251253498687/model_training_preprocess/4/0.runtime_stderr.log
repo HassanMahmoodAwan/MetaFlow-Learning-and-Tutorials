@@ -1,0 +1,38 @@
+[MFLOG|0|2024-11-22T04:54:27.391017Z|runtime|57ec02a6-4394-4779-bc67-40d40d5d81a2]<flow MachineLearningProject step model_training_preprocess> failed:
+[MFLOG|0|2024-11-22T04:54:27.459065Z|runtime|dbf5b264-2177-4666-a396-439c49896b2f]    Internal error
+[MFLOG|0|2024-11-22T04:54:27.461025Z|runtime|bc96af90-1350-4a26-b534-bd4f6c73822d]Traceback (most recent call last):
+[MFLOG|0|2024-11-22T04:54:27.461169Z|runtime|f41a535d-7368-40bb-a48b-67379db376a5]  File "/tmp/tmpbi3oth_y/metaflow/cli.py", line 1166, in main
+[MFLOG|0|2024-11-22T04:54:27.461242Z|runtime|55da0193-94fe-4a55-a991-67e2ef6be57e]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2024-11-22T04:54:27.461306Z|runtime|a336ac59-80e9-4929-805d-96d3721be46a]  File "/tmp/tmpbi3oth_y/metaflow/tracing/__init__.py", line 27, in wrapper_func
+[MFLOG|0|2024-11-22T04:54:27.461369Z|runtime|c99690db-8eae-46f1-82bd-a682404cc9d1]    return func(args, kwargs)
+[MFLOG|0|2024-11-22T04:54:27.461427Z|runtime|b911c8e7-0d80-4ed6-9c6a-3f5318513a70]           ^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-22T04:54:27.461496Z|runtime|8ba20100-990d-4995-9d11-f8bfcf933be3]  File "/tmp/tmpbi3oth_y/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2024-11-22T04:54:27.461551Z|runtime|c3a71b29-4450-43a3-aa52-70cf5e33dfa8]    return self.main(args, kwargs)
+[MFLOG|0|2024-11-22T04:54:27.461604Z|runtime|617c3073-95ca-47ad-b201-10b5fe874008]           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-22T04:54:27.461661Z|runtime|0fbe3040-fc75-4b4c-be29-4d5356c1efff]  File "/tmp/tmpbi3oth_y/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2024-11-22T04:54:27.461716Z|runtime|affc0ec8-0849-41e5-86a9-a69fdb8aa76d]    rv = self.invoke(ctx)
+[MFLOG|0|2024-11-22T04:54:27.461782Z|runtime|a79021ac-96a7-4712-a120-a2d161108fc8]         ^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-22T04:54:27.461834Z|runtime|bd122f7e-6596-4a74-b064-8ab6690de529]  File "/tmp/tmpbi3oth_y/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2024-11-22T04:54:27.461886Z|runtime|77e4e6f6-305b-4a75-bc1f-6715b9506a7f]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2024-11-22T04:54:27.461936Z|runtime|0ebb23a0-44f9-4db9-be5c-a4ef8ec039d5]                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-22T04:54:27.461999Z|runtime|2b76f0c6-6e3b-4538-929f-63fed31375be]  File "/tmp/tmpbi3oth_y/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2024-11-22T04:54:27.462047Z|runtime|2abef251-4979-446c-bcd6-2c265a725389]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2024-11-22T04:54:27.462093Z|runtime|13fbcc83-70c0-4eef-9041-2c5eae48171a]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-22T04:54:27.462136Z|runtime|7915162b-2ea4-4d5f-8d3b-676adc035ac4]  File "/tmp/tmpbi3oth_y/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2024-11-22T04:54:27.462183Z|runtime|d3ab8efc-81da-4753-8150-7e337633ecee]    return callback(args, kwargs)
+[MFLOG|0|2024-11-22T04:54:27.661905Z|runtime|9e7701ac-5abf-4b3d-8d3b-273b665ec1b1]           ^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-22T04:54:27.662043Z|runtime|8b550aa7-b0cd-4362-8c1a-7b12f53c871d]  File "/tmp/tmpbi3oth_y/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2024-11-22T04:54:27.662127Z|runtime|8e4519fc-c981-4c49-9567-ebf47362d8a3]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2024-11-22T04:54:27.662169Z|runtime|a44f03a2-3c18-4d07-88a7-2dd056a0adf3]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-22T04:54:27.662236Z|runtime|8469164d-e64e-4c1b-9da9-310e7a46305c]  File "/tmp/tmpbi3oth_y/metaflow/cli.py", line 469, in step
+[MFLOG|0|2024-11-22T04:54:27.662272Z|runtime|522a6a32-a7a0-4af7-b322-37b1e181fd79]    task.run_step(
+[MFLOG|0|2024-11-22T04:54:27.662334Z|runtime|72808380-1581-4da2-81f3-f30a312720c6]  File "/tmp/tmpbi3oth_y/metaflow/task.py", line 653, in run_step
+[MFLOG|0|2024-11-22T04:54:27.662371Z|runtime|98d4bb9d-561f-4760-84ea-c24e6b151223]    self._exec_step_function(step_func)
+[MFLOG|0|2024-11-22T04:54:27.662407Z|runtime|aa13cfa6-e9d1-42d5-906a-5c2270d5f729]  File "/tmp/tmpbi3oth_y/metaflow/task.py", line 62, in _exec_step_function
+[MFLOG|0|2024-11-22T04:54:27.662452Z|runtime|841f6a6d-f33f-4ef5-abae-f3cc7eb7918e]    step_function()
+[MFLOG|0|2024-11-22T04:54:27.662493Z|runtime|f0b7f7ba-740f-480e-96d9-da49467f4158]  File "/home/hassanmahmood/01-PROFESSIONAL-CAREER/01-ALLIED-BANK-WORKSPACE/MetaFlow-Learning-and-Tutorials/ML-Project/flow.py", line 127, in model_training_preprocess
+[MFLOG|0|2024-11-22T04:54:27.662531Z|runtime|5e9b9a37-22ad-4ba9-9ee6-c0e001d4d1c6]    plt.close(matrix)
+[MFLOG|0|2024-11-22T04:54:27.662568Z|runtime|6ef3a0a7-7e8e-4fc6-a6a1-e15b97a1a7df]              ^^^^^^
+[MFLOG|0|2024-11-22T04:54:27.662604Z|runtime|da0ed792-55b2-45c8-ad3a-d48b4ceb9ecb]NameError: name 'matrix' is not defined
+[MFLOG|0|2024-11-22T04:54:27.662641Z|runtime|baa07168-a4cb-44de-86b8-d2fc9c106552]
+[MFLOG|0|2024-11-22T04:54:27.662824Z|runtime|bd042688-3d21-4bcc-ba9b-0da1746da771]Task failed.

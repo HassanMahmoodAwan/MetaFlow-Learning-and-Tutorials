@@ -1,0 +1,4 @@
+[MFLOG|0|2024-11-22T04:55:13.876788Z|runtime|dff842dd-1a3c-4f66-9bc0-7d8981bf1f15]                Models  Accuracy
+[MFLOG|0|2024-11-22T04:55:15.732549Z|runtime|c10936f1-49ed-4d1c-8e23-61670e237b0c]0  Logistic Regression  0.619565
+[MFLOG|0|2024-11-22T04:55:15.732659Z|runtime|1f249378-36b3-4415-b1db-b6899d211856]1        Decision Tree  0.496377
+[MFLOG|0|2024-11-22T04:55:15.732718Z|runtime|37d3b0e0-8fd1-4047-9fca-fa7ded6f27e8]2        Random Forest  0.612319

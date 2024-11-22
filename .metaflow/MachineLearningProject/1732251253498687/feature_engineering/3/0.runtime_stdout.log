@@ -1,0 +1,8 @@
+[MFLOG|0|2024-11-22T04:54:21.392067Z|runtime|5c838950-c3e5-4bfe-ad6e-ce214304d75d]   id  age    dataset  trestbps   chol  ...   cp_2   cp_3  slope_0  slope_1  slope_2
+[MFLOG|0|2024-11-22T04:54:23.284152Z|runtime|c6e4fe1d-ff49-4fd0-9510-d0512618dc39]0   1   63  Cleveland     145.0  233.0  ...  False   True     True    False    False
+[MFLOG|0|2024-11-22T04:54:23.284258Z|runtime|26800cc2-33fc-43a3-9444-20efe94c03b7]1   2   67  Cleveland     160.0  286.0  ...  False  False    False     True    False
+[MFLOG|0|2024-11-22T04:54:23.284329Z|runtime|6f26a1da-6e32-4ede-9dbb-d10d75bbd8e1]2   3   67  Cleveland     120.0  229.0  ...  False  False    False     True    False
+[MFLOG|0|2024-11-22T04:54:23.284376Z|runtime|e3d78a99-8bab-4776-aabc-b7d6c457eea7]3   4   37  Cleveland     130.0  250.0  ...  False  False     True    False    False
+[MFLOG|0|2024-11-22T04:54:23.284420Z|runtime|cdb225f7-ffc2-4727-a01a-8c2e6a30a3bd]4   5   41  Cleveland     130.0  204.0  ...   True  False    False    False     True
+[MFLOG|0|2024-11-22T04:54:23.284477Z|runtime|d605378a-6895-403c-af1b-87a5226c126c]
+[MFLOG|0|2024-11-22T04:54:23.284523Z|runtime|f9952cce-95fb-4a39-abc7-5e32211f9016][5 rows x 23 columns]

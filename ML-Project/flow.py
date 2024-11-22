@@ -122,9 +122,9 @@ class MachineLearningProject(FlowSpec):
         #     self.heatmap
         # ))
         
-        matrix = show_matrix(self.preparedData)
-        current.card.append(Image.from_matplotlib(matrix))
-        plt.close(matrix)
+        self.matrix = show_matrix(self.preparedData)
+        current.card.append(Image.from_matplotlib(self.matrix))
+        plt.close(self.matrix)
         
         # Training and Testing Data
         self.X = self.preparedData.drop(['id', 'dataset', 'restecg' ,'restecg Encoded'], axis = 1)
